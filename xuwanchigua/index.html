@@ -1,0 +1,988 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>徐婉吃瓜网-娱乐圈热点事件时间线整理</title>
+<meta name="description" content="徐婉吃瓜网聚焦徐婉相关娱乐事件的公开信息整理，按时间线梳理节目物料、社交平台发言、品牌合作与网友讨论，标注事实、回应与推测的区别，提供可核对的吃瓜条目索引和追踪方法。">
+<meta name="keywords" content="徐婉吃瓜网">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23225c4e'/%3E%3Ccircle cx='32' cy='30' r='14' fill='%23f2c14e'/%3E%3Cpath d='M32 8v10M20 14l6 8M44 14l-6 8' stroke='%23f2c14e' stroke-width='3' stroke-linecap='round'/%3E%3Ctext x='32' y='52' font-size='16' text-anchor='middle' fill='%23fff' font-family='sans-serif'%3E瓜%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --green:#225c4e;
+  --green-deep:#173f36;
+  --green-soft:#e4efe9;
+  --amber:#d99a2b;
+  --amber-soft:#fbf1dc;
+  --ink:#1d2321;
+  --ink-2:#3c4643;
+  --ink-3:#63706c;
+  --line:#d7e0db;
+  --bg:#f7f9f7;
+  --card:#ffffff;
+  --radius-s:6px;
+  --radius-m:10px;
+  --radius-l:16px;
+  --shadow-s:0 1px 2px rgba(23,63,54,.06);
+  --shadow-m:0 4px 14px rgba(23,63,54,.08);
+  --space-1:6px;
+  --space-2:12px;
+  --space-3:18px;
+  --space-4:26px;
+  --space-5:38px;
+  --space-6:56px;
+  --font-sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  --sticky-h:96px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:var(--font-sans);
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.75;
+  font-size:16px;
+}
+a{color:var(--green-deep);text-decoration:none;}
+a:hover{text-decoration:underline;}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px;border-radius:3px;}
+img{max-width:100%;display:block;}
+h1,h2,h3,h4{line-height:1.35;margin:0 0 var(--space-2);}
+p{margin:0 0 var(--space-2);}
+ul,ol{margin:0 0 var(--space-2);padding-left:1.25em;}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 18px;}
+.skip-link{position:absolute;left:-999px;top:0;background:var(--green);color:#fff;padding:8px 14px;z-index:200;}
+.skip-link:focus{left:8px;top:8px;}
+/* ===== sticky stack ===== */
+.sticky-stack{position:sticky;top:0;z-index:100;box-shadow:0 1px 0 var(--line);}
+.announce{
+  background:var(--green-deep);
+  color:#eaf3ef;
+  font-size:13.5px;
+  padding:7px 0;
+}
+.announce .wrap{display:flex;gap:10px;align-items:center;flex-wrap:wrap;}
+.announce b{color:#ffd77e;font-weight:600;}
+.announce .dot{width:7px;height:7px;border-radius:50%;background:#ffd77e;display:inline-block;flex:0 0 auto;}
+.announce .ann-link{color:#ffd77e;text-decoration:underline;}
+.site-header{
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{display:flex;align-items:center;gap:18px;padding:10px 0;flex-wrap:wrap;}
+.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto;}
+.brand svg{width:38px;height:38px;flex:0 0 auto;}
+.brand-text{font-size:19px;font-weight:700;letter-spacing:.5px;color:var(--green-deep);}
+.brand-sub{display:block;font-size:11px;font-weight:400;color:var(--ink-3);letter-spacing:1px;}
+.main-nav{flex:1 1 auto;}
+.main-nav ul{display:flex;flex-wrap:wrap;gap:4px 2px;list-style:none;margin:0;padding:0;}
+.main-nav a{display:block;padding:6px 10px;border-radius:var(--radius-s);font-size:14px;color:var(--ink-2);}
+.main-nav a:hover{background:var(--green-soft);color:var(--green-deep);text-decoration:none;}
+.header-tools{display:flex;align-items:center;gap:8px;}
+.search-form{display:flex;align-items:center;border:1px solid var(--line);border-radius:999px;background:#fff;padding:3px 4px 3px 12px;}
+.search-form input{border:0;outline:none;background:transparent;font-size:14px;width:150px;font-family:inherit;color:var(--ink);}
+.search-form button{border:0;background:var(--green);color:#fff;border-radius:999px;padding:5px 14px;font-size:13px;cursor:pointer;font-family:inherit;}
+.search-form button:hover{background:var(--green-deep);}
+.menu-toggle{
+  display:none;border:1px solid var(--line);background:#fff;border-radius:var(--radius-s);
+  padding:6px 12px;font-size:14px;font-family:inherit;cursor:pointer;color:var(--green-deep);
+}
+.search-feedback{font-size:13px;color:var(--amber);margin:0;padding:4px 0 0;display:none;}
+.search-feedback.on{display:block;}
+/* ===== hero ===== */
+.hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(150deg,#eaf3ee 0%,#f7f9f7 55%,#fbf1dc 100%);
+  border-bottom:1px solid var(--line);
+}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:36px;align-items:center;padding-top:46px;padding-bottom:46px;}
+.hero-copy{position:relative;z-index:2;}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:1px;color:var(--green-deep);background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 12px;margin-bottom:14px;}
+.hero-tag .dot{width:7px;height:7px;border-radius:50%;background:var(--amber);}
+.hero h1{font-size:clamp(28px,4.4vw,42px);color:var(--green-deep);margin-bottom:12px;letter-spacing:1px;}
+.hero-lead{font-size:15.5px;color:var(--ink-2);max-width:34em;margin-bottom:18px;}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px;}
+.btn{display:inline-block;padding:10px 22px;border-radius:999px;font-size:14.5px;font-weight:600;transition:transform .18s ease;}
+.btn:hover{transform:translateY(-2px);text-decoration:none;}
+.btn-primary{background:var(--green);color:#fff;box-shadow:var(--shadow-m);}
+.btn-primary:hover{background:var(--green-deep);}
+.btn-ghost{border:1px solid var(--green);color:var(--green-deep);background:transparent;}
+.btn-ghost:hover{background:var(--green-soft);}
+.hero-stats{display:flex;flex-wrap:wrap;gap:22px;list-style:none;margin:0;padding:0;}
+.hero-stats li{min-width:92px;}
+.hero-stats b{display:block;font-size:24px;color:var(--green-deep);line-height:1.2;}
+.hero-stats span{font-size:12.5px;color:var(--ink-3);}
+.hero-art{position:relative;height:100%;min-height:300px;}
+.hero-art svg{width:100%;height:auto;display:block;}
+/* ===== layout ===== */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:34px;padding:44px 0 10px;align-items:start;}
+.sidebar{position:sticky;top:calc(var(--sticky-h) + 16px);display:flex;flex-direction:column;gap:20px;}
+.side-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);padding:16px 18px;box-shadow:var(--shadow-s);}
+.side-card h3{font-size:14.5px;color:var(--green-deep);letter-spacing:.5px;margin-bottom:10px;}
+.side-nav ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px;}
+.side-nav a{display:block;padding:6px 10px;border-left:3px solid transparent;border-radius:0 var(--radius-s) var(--radius-s) 0;font-size:13.5px;color:var(--ink-2);}
+.side-nav a:hover{background:var(--green-soft);text-decoration:none;}
+.side-nav a.active{border-left-color:var(--amber);background:var(--green-soft);color:var(--green-deep);font-weight:600;}
+.pick-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;}
+.pick-list li{font-size:13.5px;color:var(--ink-2);border-bottom:1px dashed var(--line);padding-bottom:9px;}
+.pick-list li:last-child{border-bottom:0;padding-bottom:0;}
+.pick-list a{font-weight:600;}
+.pick-list time{display:block;font-size:12px;color:var(--ink-3);}
+.side-note{font-size:13px;color:var(--ink-2);background:var(--amber-soft);border:1px solid #f0dcb4;border-radius:var(--radius-m);padding:12px 14px;}
+/* ===== sections ===== */
+.section{margin-bottom:var(--space-6);scroll-margin-top:var(--sticky-h);}
+.section-head{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:var(--space-3);border-bottom:2px solid var(--green-soft);padding-bottom:8px;}
+.section-head h2{font-size:22px;color:var(--green-deep);margin:0;position:relative;padding-left:14px;}
+.section-head h2::before{content:"";position:absolute;left:0;top:6px;bottom:4px;width:5px;border-radius:3px;background:var(--amber);}
+.section-head .more{font-size:13.5px;color:var(--ink-3);}
+.kicker{font-size:12.5px;letter-spacing:1px;color:var(--ink-3);margin-bottom:4px;display:block;}
+/* cards grid */
+.grid-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px;}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);overflow:hidden;box-shadow:var(--shadow-s);display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease;}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-m);}
+.card img{width:100%;height:150px;object-fit:cover;}
+.card-body{padding:14px 16px 16px;display:flex;flex-direction:column;flex:1;}
+.card-body h3{font-size:16px;margin-bottom:6px;}
+.card-body h3 a{color:var(--ink);}
+.card-body p{font-size:13.5px;color:var(--ink-2);flex:1;margin-bottom:10px;}
+.meta{font-size:12px;color:var(--ink-3);display:flex;gap:10px;flex-wrap:wrap;}
+.tag{display:inline-block;font-size:12px;background:var(--green-soft);color:var(--green-deep);border-radius:999px;padding:2px 10px;}
+.tag.amber{background:var(--amber-soft);color:#8a5c11;}
+/* compact list */
+.list-compact{list-style:none;margin:0;padding:0;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);overflow:hidden;}
+.list-compact li{display:flex;gap:14px;align-items:flex-start;padding:14px 18px;border-bottom:1px solid var(--line);}
+.list-compact li:last-child{border-bottom:0;}
+.list-compact time{flex:0 0 auto;font-size:12.5px;color:var(--ink-3);width:64px;padding-top:2px;font-variant-numeric:tabular-nums;}
+.list-compact .li-body{min-width:0;}
+.list-compact .li-body b{display:block;font-size:15px;color:var(--ink);margin-bottom:2px;}
+.list-compact .li-body span{font-size:13px;color:var(--ink-2);}
+/* channel index */
+.channel-index{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;list-style:none;margin:0;padding:0;}
+.channel-index a{display:block;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--green);border-radius:var(--radius-s);padding:10px 12px;font-size:14px;color:var(--ink-2);transition:background .15s ease;}
+.channel-index a:hover{background:var(--green-soft);text-decoration:none;color:var(--green-deep);}
+.channel-index small{display:block;font-size:11.5px;color:var(--ink-3);}
+/* deep analysis */
+.deep{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-l);padding:clamp(20px,4vw,38px);box-shadow:var(--shadow-s);}
+.deep h2{margin-bottom:var(--space-2);}
+.deep-intro{font-size:15px;color:var(--ink-2);border-left:3px solid var(--amber);padding-left:14px;margin-bottom:var(--space-4);}
+.deep h3{font-size:18px;color:var(--green-deep);margin-top:var(--space-4);padding-top:var(--space-3);border-top:1px dashed var(--line);}
+.deep h3:first-of-type{border-top:0;padding-top:0;margin-top:0;}
+.claim{background:var(--green-soft);border-radius:var(--radius-m);padding:14px 16px;margin:12px 0;font-size:14.5px;}
+.claim strong{color:var(--green-deep);}
+.check-table{width:100%;border-collapse:collapse;font-size:13.5px;margin:12px 0 18px;}
+.check-table th,.check-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top;}
+.check-table th{background:var(--green-soft);color:var(--green-deep);font-weight:600;white-space:nowrap;}
+.check-table tr:nth-child(even) td{background:#fbfcfb;}
+.factbox{border:1px solid var(--line);border-radius:var(--radius-m);padding:12px 16px;font-size:13.5px;margin:12px 0;}
+.factbox b{display:inline-block;font-size:12px;border-radius:4px;padding:1px 8px;margin-right:6px;color:#fff;}
+.fact-1{background:#3f7d5e;}
+.fact-2{background:#4a6fa5;}
+.fact-3{background:#8a6bbf;}
+.fact-4{background:#b5762a;}
+.timeline{list-style:none;margin:16px 0;padding:0 0 0 18px;border-left:2px solid var(--green-soft);}
+.timeline li{position:relative;padding:0 0 16px 16px;font-size:14px;}
+.timeline li::before{content:"";position:absolute;left:-25px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--amber);border:2px solid #fff;box-shadow:0 0 0 1px var(--green);}
+.timeline time{font-weight:700;color:var(--green-deep);display:block;font-size:13px;}
+/* steps */
+.steps{list-style:none;margin:0;padding:0;counter-reset:step;display:grid;gap:14px;}
+.steps li{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);padding:16px 18px 16px 62px;counter-increment:step;}
+.steps li::before{content:counter(step);position:absolute;left:16px;top:14px;width:30px;height:30px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;}
+.steps li b{display:block;color:var(--green-deep);margin-bottom:3px;font-size:15px;}
+.steps li span{font-size:13.5px;color:var(--ink-2);}
+/* compare panel */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--radius-m);overflow:hidden;background:var(--card);}
+.compare>div{padding:16px 18px;}
+.compare>div:first-child{border-right:1px solid var(--line);}
+.compare h4{font-size:14.5px;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.compare .dotmark{width:9px;height:9px;border-radius:50%;display:inline-block;}
+.compare ul{margin:0;padding-left:1.1em;font-size:13.5px;color:var(--ink-2);}
+/* faq */
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);margin-bottom:10px;overflow:hidden;}
+.faq summary{cursor:pointer;padding:14px 18px;font-size:15px;font-weight:600;color:var(--ink);list-style:none;position:relative;padding-right:44px;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:20px;color:var(--green);font-weight:400;transition:transform .18s ease;}
+.faq details[open] summary::after{content:"−";}
+.faq details[open] summary{background:var(--green-soft);color:var(--green-deep);}
+.faq .ans{padding:4px 18px 16px;font-size:14px;color:var(--ink-2);}
+/* comments */
+.comments{display:grid;gap:14px;}
+.comment{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);padding:14px 18px;}
+.comment .who{display:flex;align-items:center;gap:10px;margin-bottom:6px;}
+.avatar{width:32px;height:32px;border-radius:50%;background:var(--green-soft);color:var(--green-deep);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex:0 0 auto;}
+.comment .who b{font-size:14px;}
+.comment .who time{font-size:12px;color:var(--ink-3);}
+.comment p{font-size:14px;margin:0;color:var(--ink-2);}
+.comment .cite{color:var(--green-deep);font-weight:600;}
+.mood{font-size:12px;border-radius:999px;padding:1px 8px;margin-left:auto;}
+.mood.good{background:#e2f0e6;color:#2c6b45;}
+.mood.mid{background:#eef0f2;color:#5a6469;}
+.mood.bad{background:#fbe9e3;color:#a04a2c;}
+/* quote card */
+.quote-card{position:relative;background:linear-gradient(135deg,var(--green-deep),#2d6f5d);color:#eaf3ef;border-radius:var(--radius-l);padding:28px 32px;overflow:hidden;}
+.quote-card::before{content:"“";position:absolute;right:18px;top:-14px;font-size:120px;color:rgba(255,255,255,.1);font-family:Georgia,serif;}
+.quote-card p{font-size:16px;margin-bottom:10px;position:relative;z-index:1;}
+.quote-card cite{font-size:13px;color:#ffd77e;font-style:normal;}
+/* tags index */
+.tag-index{display:flex;flex-wrap:wrap;gap:8px;}
+.tag-index a{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:13.5px;color:var(--ink-2);}
+.tag-index a:hover{background:var(--green-soft);border-color:var(--green);color:var(--green-deep);text-decoration:none;}
+/* ranking */
+.rank-list{list-style:none;margin:0;padding:0;display:grid;gap:10px;}
+.rank-list li{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);padding:12px 16px;}
+.rank-num{flex:0 0 auto;width:30px;height:30px;border-radius:50%;background:var(--green-soft);color:var(--green-deep);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;}
+.rank-list li:nth-child(1) .rank-num{background:var(--amber);color:#fff;}
+.rank-list li:nth-child(2) .rank-num{background:#e8d3a2;color:#6b4c0e;}
+.rank-list li:nth-child(3) .rank-num{background:#d8e6de;color:#2c5b48;}
+.rank-list b{font-size:14.5px;display:block;color:var(--ink);}
+.rank-list span{font-size:12.5px;color:var(--ink-3);}
+.rank-list .score{margin-left:auto;font-size:13px;color:var(--amber);font-weight:700;white-space:nowrap;}
+/* footer */
+.site-footer{background:var(--green-deep);color:#cfe0d9;margin-top:20px;padding:40px 0 22px;font-size:13.5px;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px;margin-bottom:30px;}
+.site-footer h3{color:#fff;font-size:15px;margin-bottom:10px;}
+.site-footer a{color:#cfe0d9;display:block;padding:3px 0;font-size:13px;}
+.site-footer a:hover{color:#ffd77e;text-decoration:none;}
+.footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.footer-brand svg{width:34px;height:34px;}
+.footer-brand b{color:#fff;font-size:18px;}
+.footer-pos{font-size:13px;color:#a8c4ba;margin-bottom:10px;line-height:1.7;}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.14);padding-top:16px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12.5px;color:#93b1a7;}
+.footer-bottom .update{color:#ffd77e;}
+/* back to top */
+.to-top{position:fixed;right:20px;bottom:24px;width:44px;height:44px;border-radius:50%;background:var(--green);color:#fff;border:0;cursor:pointer;box-shadow:var(--shadow-m);display:none;align-items:center;justify-content:center;font-size:18px;z-index:90;font-family:inherit;}
+.to-top.show{display:flex;}
+.to-top:hover{background:var(--green-deep);}
+/* responsive */
+@media (max-width:980px){
+  .layout{grid-template-columns:minmax(0,1fr);gap:30px;}
+  .sidebar{position:static;}
+  .hero .wrap{grid-template-columns:1fr;gap:22px;padding-top:32px;padding-bottom:32px;}
+  .hero-art{min-height:0;max-width:420px;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .main-nav{order:4;flex-basis:100%;}
+  .main-nav ul{max-height:0;overflow:hidden;transition:max-height .25s ease;}
+  .main-nav.open ul{max-height:460px;}
+  .menu-toggle{display:block;margin-left:auto;}
+  .header-tools{order:3;flex-basis:100%;}
+  .search-form input{width:100%;flex:1;}
+  .search-form{width:100%;}
+  .header-tools{width:100%;}
+  .search-form form{display:flex;width:100%;}
+}
+@media (max-width:620px){
+  body{font-size:15.5px;}
+  .compare{grid-template-columns:1fr;}
+  .compare>div:first-child{border-right:0;border-bottom:1px solid var(--line);}
+  .list-compact li{flex-direction:column;gap:4px;}
+  .list-compact time{width:auto;}
+  .footer-grid{grid-template-columns:1fr;}
+  .hero-stats{gap:16px;}
+  .section-head h2{font-size:19px;}
+  .to-top{right:14px;bottom:16px;width:40px;height:40px;}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important;}
+  .card:hover,.btn:hover{transform:none;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<div class="sticky-stack">
+  <div class="announce" role="region" aria-label="站内更新公告">
+    <div class="wrap">
+      <span class="dot" aria-hidden="true"></span>
+      <span><b>更新</b> 2026-11-08：补入《城市合伙人》第三期正片 11 月 6 日上线后的舞台直拍时长对比表；10 月 28 日品牌直播争议的官方回应记录同步录入。</span>
+      <a class="ann-link" href="/#latest">看当周条目</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <svg viewBox="0 0 64 64" aria-hidden="true" role="img">
+          <rect width="64" height="64" rx="14" fill="#225c4e"/>
+          <circle cx="32" cy="30" r="14" fill="#f2c14e"/>
+          <path d="M32 8v10M20 14l6 8M44 14l-6 8" stroke="#f2c14e" stroke-width="3" stroke-linecap="round"/>
+          <text x="32" y="52" font-size="16" text-anchor="middle" fill="#ffffff" font-family="sans-serif">瓜</text>
+        </svg>
+        <div>
+          <span class="brand-text">徐婉吃瓜网</span>
+          <span class="brand-sub">事件时间线 · 公开信息归档</span>
+        </div>
+      </div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" id="menuToggle">导航菜单</button>
+      <nav class="main-nav" id="main-nav" aria-label="主题导航">
+        <ul>
+          <li><a href="/#overview">领域概览</a></li>
+          <li><a href="/#picks">精选内容</a></li>
+          <li><a href="/#latest">最新更新</a></li>
+          <li><a href="/#channels">分类入口</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+        </ul>
+      </nav>
+      <div class="header-tools">
+        <form class="search-form" id="searchForm" role="search" aria-label="站内查找">
+          <label for="searchInput" class="visually-hidden" style="position:absolute;left:-999px;">查找条目</label>
+          <input id="searchInput" type="search" placeholder="查条目：舞台直拍、品牌直播…" autocomplete="off">
+          <button type="submit">查找</button>
+        </form>
+      </div>
+      <p class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></p>
+    </div>
+  </header>
+</div>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="hero-tag"><span class="dot" aria-hidden="true"></span>2026 年 11 月 8 日 · 条目 47 / 事件档案 12</span>
+        <h1 id="hero-title">徐婉吃瓜网</h1>
+        <p class="hero-lead">把徐婉相关的公开动态拆成可核对的条目：节目正片与舞台直拍、品牌直播公告、社交平台原文、路透时间点。事实、回应、转述、推测分开摆放，争议部分给出判断依据，而不是只丢一句结论。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#deep">读本期深度解析</a>
+          <a class="btn btn-ghost" href="/#latest">看最新 7 天更新</a>
+        </div>
+        <ul class="hero-stats">
+          <li><b>47</b><span>可核对条目</span></li>
+          <li><b>12</b><span>事件时间线</span></li>
+          <li><b>6</b><span>待澄清争议点</span></li>
+          <li><b>9</b><span>追踪频道</span></li>
+        </ul>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 460 320" role="img">
+          <defs>
+            <linearGradient id="gA" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#2d6f5d"/><stop offset="1" stop-color="#1b4a3e"/>
+            </linearGradient>
+            <linearGradient id="gB" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#f2c14e"/><stop offset="1" stop-color="#d99a2b"/>
+            </linearGradient>
+          </defs>
+          <rect x="26" y="34" width="280" height="252" rx="18" fill="url(#gA)"/>
+          <rect x="44" y="56" width="120" height="12" rx="6" fill="#ffd77e" opacity=".9"/>
+          <rect x="44" y="78" width="200" height="8" rx="4" fill="#ffffff" opacity=".35"/>
+          <rect x="44" y="94" width="168" height="8" rx="4" fill="#ffffff" opacity=".25"/>
+          <circle cx="74" cy="140" r="16" fill="#f2c14e"/>
+          <rect x="102" y="132" width="140" height="8" rx="4" fill="#ffffff" opacity=".5"/>
+          <rect x="102" y="148" width="100" height="8" rx="4" fill="#ffffff" opacity=".3"/>
+          <rect x="44" y="178" width="238" height="86" rx="10" fill="#ffffff" opacity=".12"/>
+          <path d="M60 244 L92 214 L124 230 L158 196 L196 218 L238 184" stroke="#ffd77e" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="92" cy="214" r="4" fill="#ffd77e"/><circle cx="158" cy="196" r="4" fill="#ffd77e"/><circle cx="238" cy="184" r="4" fill="#ffd77e"/>
+          <rect x="318" y="60" width="116" height="74" rx="12" fill="url(#gB)"/>
+          <rect x="332" y="76" width="60" height="8" rx="4" fill="#5a3c06" opacity=".75"/>
+          <rect x="332" y="92" width="88" height="8" rx="4" fill="#5a3c06" opacity=".45"/>
+          <rect x="332" y="108" width="46" height="8" rx="4" fill="#5a3c06" opacity=".45"/>
+          <rect x="318" y="152" width="116" height="70" rx="12" fill="#ffffff" stroke="#d7e0db"/>
+          <rect x="332" y="166" width="52" height="8" rx="4" fill="#225c4e" opacity=".7"/>
+          <rect x="332" y="182" width="80" height="8" rx="4" fill="#225c4e" opacity=".3"/>
+          <rect x="332" y="198" width="64" height="8" rx="4" fill="#225c4e" opacity=".3"/>
+          <rect x="318" y="238" width="116" height="44" rx="12" fill="#173f36"/>
+          <circle cx="342" cy="260" r="9" fill="#f2c14e"/>
+          <rect x="358" y="252" width="56" height="7" rx="3.5" fill="#ffffff" opacity=".5"/>
+          <rect x="358" y="265" width="38" height="7" rx="3.5" fill="#ffffff" opacity=".3"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap layout">
+
+    <div class="content">
+
+      <!-- 1. 领域概览 -->
+      <section class="section" id="overview" aria-labelledby="overview-title">
+        <div class="section-head">
+          <h2 id="overview-title">领域概览：吃瓜档案怎么组成</h2>
+          <span class="more">覆盖 12 条事件线</span>
+        </div>
+        <p>徐婉的名字在 2026 年下半年频繁出现在综艺物料和品牌活动里，《城市合伙人》第三期于 11 月 6 日上线，舞台部分的正片时长 3 分 42 秒，官方直拍版本 4 分 05 秒，两个版本相差 23 秒，这个差额是本周讨论最集中的技术细节。事件档案围绕她的公开行程、节目播出、商务公告、社交账号原文四条线展开，每条线各自成档，不混在一起讲。</p>
+        <div class="grid-cards">
+          <article class="card">
+            <img src="https://picsum.photos/seed/xuwan-program/600/400" width="600" height="400" loading="lazy" alt="综艺节目录制现场灯架与监视器，对应节目正片条目">
+            <div class="card-body">
+              <span class="kicker">节目线</span>
+              <h3><a href="/#latest">《城市合伙人》第三期版本差异</a></h3>
+              <p>正片与直拍相差 23 秒，剪辑点集中在第二段舞蹈的入场走位。</p>
+              <div class="meta"><span>11-06</span><span class="tag">正片时长</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/xuwan-brand-live/600/400" width="600" height="400" loading="lazy" alt="品牌直播间背景板与补光灯，对应品牌直播条目">
+            <div class="card-body">
+              <span class="kicker">商务线</span>
+              <h3><a href="/#deep">10·28 品牌直播间发言争议</a></h3>
+              <p>直播原片 21:14 处的表述被截成 8 秒短视频，官方回应 10 月 30 日发布。</p>
+              <div class="meta"><span>10-30</span><span class="tag amber">回应已核</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/xuwan-social/600/400" width="600" height="400" loading="lazy" alt="手机屏幕上的社交平台发文界面，对应账号原文条目">
+            <div class="card-body">
+              <span class="kicker">账号线</span>
+              <h3><a href="/#news">11 月 2 日账号配文改动</a></h3>
+              <p>同一条动态在 11 月 2 日 18:40 修改了配文第二句，截图对比已归档。</p>
+              <div class="meta"><span>11-02</span><span class="tag">原文留存</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 2. 精选内容推荐 -->
+      <section class="section" id="picks" aria-labelledby="picks-title">
+        <div class="section-head">
+          <h2 id="picks-title">精选内容推荐：本周值得先看的五条</h2>
+          <span class="more">按信息密度排序</span>
+        </div>
+        <ul class="list-compact">
+          <li>
+            <time datetime="2026-11-07">11-07</time>
+            <div class="li-body">
+              <b><a href="/#deep">直拍与正片的 23 秒差额逐帧对照</a></b>
+              <span>把两个版本按秒对齐，标出 3 处剪辑点，附时间码。可直接引用的对比表。</span>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-11-05">11-05</time>
+            <div class="li-body">
+              <b><a href="/#news">10·28 直播原片 21:14 前后的完整上下文</a></b>
+              <span>记录前 40 秒与后 30 秒说了什么，短切片段省略了哪一句转折。</span>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-11-04">11-04</time>
+            <div class="li-body">
+              <b><a href="/#guide">判断一条吃瓜信息是否可靠的四个动作</a></b>
+              <span>找原片、对时间码、查发布账号、看是否有二次剪辑水印，四步各配例子。</span>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-11-03">11-03</time>
+            <div class="li-body">
+              <b><a href="/#channels">徐婉近期公开行程条目索引</a></b>
+              <span>10 月 12 日至 11 月 6 日共 9 条公开行程，含录制、品牌活动、机场路透。</span>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-11-01">11-01</time>
+            <div class="li-body">
+              <b><a href="/#comments">读者对 10·28 事件的三种不同判断</a></b>
+              <span>支持、质疑、观望各一组，评论指向具体时间码与原话措辞。</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 3. 最新更新 -->
+      <section class="section" id="latest" aria-labelledby="latest-title">
+        <div class="section-head">
+          <h2 id="latest-title">最新更新：11 月 1 日至 11 月 8 日</h2>
+          <span class="more">新增 14 条</span>
+        </div>
+        <ol class="timeline">
+          <li>
+            <time datetime="2026-11-08">11 月 8 日 今天</time>
+            补录《城市合伙人》第三期舞台直拍的分镜表，第二段舞蹈入场处正片删掉了 9 秒走位镜头，直拍保留完整版。条目编号 EP03-07。
+          </li>
+          <li>
+            <time datetime="2026-11-07">11 月 7 日</time>
+            品牌方在官方微博发布 10·28 直播争议的第二次说明，措辞从“表述不完整”改为“剪辑片段缺失上下文”，两次说明相隔 8 天。
+          </li>
+          <li>
+            <time datetime="2026-11-06">11 月 6 日</time>
+            《城市合伙人》第三期正片上线，节目官微同步放出 4 分 05 秒直拍，评论区前 200 条里 63 条在问 23 秒差额。
+          </li>
+          <li>
+            <time datetime="2026-11-04">11 月 4 日</time>
+            徐婉账号发布一组排练照，共 6 张，第 4 张背景白板上有可辨认的排期字样“11/6 舞台复审”。
+          </li>
+          <li>
+            <time datetime="2026-11-02">11 月 2 日</time>
+            账号动态配文第二句由“谢谢大家的等待”改为“谢谢每一位到场的人”，修改时间 18:40，修改前截图已存。
+          </li>
+          <li>
+            <time datetime="2026-10-30">10 月 30 日</time>
+            品牌直播争议首次官方回应发布，全文 412 字，未提及直播原片时间码。
+          </li>
+        </ol>
+      </section>
+
+      <!-- 4. 分类入口 -->
+      <section class="section" id="channels" aria-labelledby="channels-title">
+        <div class="section-head">
+          <h2 id="channels-title">分类入口：九个常搜频道</h2>
+          <span class="more">按更新频率排列</span>
+        </div>
+        <ul class="channel-index">
+          <li><a href="/#latest">舞台直拍对比<small>EP03 起 4 条</small></a></li>
+          <li><a href="/#deep">品牌直播原片<small>含 10·28 争议</small></a></li>
+          <li><a href="/#news">社交账号原文<small>改动记录 7 条</small></a></li>
+          <li><a href="/#guide">行程路透时间点<small>10-12 至 11-06</small></a></li>
+          <li><a href="/#picks">节目正片剪辑点<small>按时间码索引</small></a></li>
+          <li><a href="/#faq">官方回应归档<small>两次说明全文</small></a></li>
+          <li><a href="/#comments">读者判断分歧<small>三组立场</small></a></li>
+          <li><a href="/#rank">条目可信度分层<small>A/B/C 三级</small></a></li>
+          <li><a href="/#tags">搜索词索引<small>32 个具体词</small></a></li>
+        </ul>
+      </section>
+
+      <!-- 5. 深度解析（唯一主体阅读区） -->
+      <section class="section deep" id="deep" aria-labelledby="deep-title">
+        <span class="kicker">本期主体阅读区</span>
+        <h2 id="deep-title">深度解析：23 秒差额不是剪辑失误，而是两个版本各自的服务对象不同</h2>
+        <p class="deep-intro">核心判断：正片删掉的 9 秒入场走位，服务的是电视端节奏；直拍保留完整，服务的是二次传播。把两者当成“完整版与删减版”对立起来，会误判争议的性质。下面把判断拆成可核对的结构，逐项给出时间码和对照。</p>
+
+        <h3>一、先把 23 秒拆开：9 秒走位、8 秒观众镜头、6 秒收尾</h3>
+        <p>把《城市合伙人》第三期正片（11 月 6 日 20:00 上线）与官微直拍（同日 20:12 发布）按秒对齐，差额由三段构成：</p>
+        <table class="check-table">
+          <caption style="caption-side:top;text-align:left;font-size:13px;color:var(--ink-3);padding-bottom:6px;">EP03 正片与直拍时长对照（单位：秒）</caption>
+          <thead><tr><th>片段</th><th>正片时长</th><th>直拍时长</th><th>差额</th><th>删减位置</th></tr></thead>
+          <tbody>
+            <tr><td>入场走位</td><td>6</td><td>15</td><td>9</td><td>正片 00:41 直接切入主歌</td></tr>
+            <tr><td>观众反应镜头</td><td>4</td><td>12</td><td>8</td><td>正片保留 1 个全景</td></tr>
+            <tr><td>收尾定点</td><td>5</td><td>11</td><td>6</td><td>正片 03:37 提前切黑</td></tr>
+            <tr><td>合计</td><td>222</td><td>245</td><td>23</td><td>—</td></tr>
+          </tbody>
+        </table>
+        <div class="claim"><strong>可反驳点：</strong>如果差额全来自“剪掉失误镜头”，三段删减都应该落在动作出错处。实际只有入场走位一段涉及动作，观众镜头和收尾定点与失误无关，说明删减逻辑是节奏与播出时长，不是遮丑。</div>
+
+        <h3>二、10·28 直播争议的时间线要单独摆</h3>
+        <p>品牌直播发生在 10 月 28 日 20:30，争议句出现在原片 21:14。把它和节目版本差异混为一谈，会让两个独立事件互相污染。</p>
+        <ul class="timeline">
+          <li><time datetime="2026-10-28">10 月 28 日 21:14</time>直播原片出现“这个安排我事先不知道”一句，前 40 秒在讲当天流程调整，后 30 秒补充“临时改的，我也在适应”。</li>
+          <li><time datetime="2026-10-28">10 月 28 日 23:02</time>某短视频账号发布 8 秒切片，只保留争议句，播放量当晚 47 万。</li>
+          <li><time datetime="2026-10-30">10 月 30 日 15:00</time>品牌方首次说明 412 字，称“表述被片段化理解”，未给时间码。</li>
+          <li><time datetime="2026-11-07">11 月 7 日 11:20</time>品牌方第二次说明，改口“剪辑片段缺失上下文”，仍未附原片链接。</li>
+        </ul>
+        <div class="factbox"><b class="fact-1">事实</b>原片 21:14 前后确有一句流程说明，B 站与抖音留存版本时间码一致。</div>
+        <div class="factbox"><b class="fact-2">回应</b>品牌方两次说明措辞不同，第二次比第一次更接近“剪辑导致误读”的表述。</div>
+        <div class="factbox"><b class="fact-3">转述</b>部分账号称“徐婉当场情绪失控”，原片 21:14 至 21:40 无对应画面，仅为文字转述。</div>
+        <div class="factbox"><b class="fact-4">推测</b>切片账号与品牌方是否存在投放关系，目前无公开证据，不作结论。</div>
+
+        <h3>三、把“可信度”分层，比争论谁对更有效</h3>
+        <p>同一事件的信息可以按来源分成三层。层级不代表立场，只代表核对成本。</p>
+        <div class="compare">
+          <div>
+            <h4><span class="dotmark" style="background:#3f7d5e;"></span>A 层：可回放原片</h4>
+            <ul>
+              <li>节目正片、直拍、直播回放</li>
+              <li>账号动态的修改前后截图</li>
+              <li>官方说明全文与发布时间</li>
+              <li>特征：有时间码、有发布主体、可二次查看</li>
+            </ul>
+          </div>
+          <div>
+            <h4><span class="dotmark" style="background:#b5762a;"></span>C 层：无源转述</h4>
+            <ul>
+              <li>“据说现场有人”类文字帖</li>
+              <li>无时间码的 8 秒切片配文字</li>
+              <li>匿名爆料截图，头像与 ID 打码</li>
+              <li>特征：无法回溯到原片或原始发布者</li>
+            </ul>
+          </div>
+        </div>
+        <p>10·28 事件里，A 层材料只有两样：直播回放和品牌方两次说明。其余讨论大多落在 B 层（有出处但经过二次加工）与 C 层之间。把 C 层当论据，讨论会迅速滑向立场对撞；回到 A 层，能确认的只有“原片有一句话、切片删了上下文”这一件事。</p>
+
+        <h3>四、和 2026 年 9 月的一次类似处理对比</h3>
+        <p>9 月 17 日另一档节目的舞台也出现正片与直拍时长差，差额 14 秒，节目组当天 22:40 在官微贴出剪辑说明，列出删减位置。那次争议在 48 小时内平息。本次《城市合伙人》节目组截至 11 月 8 日未发布剪辑说明，讨论持续 3 天。差别不在差额大小，而在是否给出可核对的位置清单。</p>
+        <div class="claim"><strong>判断：</strong>23 秒本身不构成问题，缺少位置清单才让讨论反复。若节目组补一张与上表同结构的删减表，争议大概率在一周内降温。这个判断可以被推翻——只要出现证据表明删减确实为规避舞台失误，上表第三段的收尾定点删减就无法用节奏解释。</div>
+      </section>
+
+      <!-- 6. 体验指南 -->
+      <section class="section" id="guide" aria-labelledby="guide-title">
+        <div class="section-head">
+          <h2 id="guide-title">体验指南：四步核对一条吃瓜信息</h2>
+          <span class="more">适用于节目与直播两类条目</span>
+        </div>
+        <ol class="steps">
+          <li><b>先找原片，不先看切片</b><span>节目看正片与直拍两个版本，直播看回放。切片只作为线索，不作为证据。10·28 事件里，8 秒切片删掉的 30 秒补充说明就是关键。</span></li>
+          <li><b>记时间码，不记“大概”</b><span>把争议句出现的位置记到分秒，例如 21:14。有明确时间码的条目才能被另一个人复现。</span></li>
+          <li><b>查发布账号的原始动态</b><span>账号配文改动要看修改前后截图，11 月 2 日那条动态改的是第二句，不是标题，改动幅度小但指向不同。</span></li>
+          <li><b>区分事实、回应、转述、推测</b><span>四类信息分开记。官方说明属于回应，不等于事实认定；匿名截图属于转述，不能直接当结论。</span></li>
+        </ol>
+      </section>
+
+      <!-- 7. FAQ -->
+      <section class="section faq" id="faq" aria-labelledby="faq-title">
+        <div class="section-head">
+          <h2 id="faq-title">常见问题：条目核对与版本差异</h2>
+          <span class="more">共 6 问</span>
+        </div>
+        <details>
+          <summary>《城市合伙人》第三期正片和直拍为什么差 23 秒？</summary>
+          <div class="ans">差额由入场走位 9 秒、观众反应镜头 8 秒、收尾定点 6 秒组成。正片 00:41 直接切入主歌，直拍保留完整走位；正片 03:37 提前切黑。两版服务对象不同，正片对电视端节奏，直拍对二次传播。</div>
+        </details>
+        <details>
+          <summary>10 月 28 日品牌直播的原话到底说了什么？</summary>
+          <div class="ans">直播回放 21:14 处为“这个安排我事先不知道”，随后 30 秒补充“临时改的，我也在适应”。8 秒切片只保留前半句，删掉了补充说明。原片在 B 站与抖音的留存版本时间码一致。</div>
+        </details>
+        <details>
+          <summary>品牌方两次说明的区别在哪？</summary>
+          <div class="ans">10 月 30 日首次说明 412 字，用“表述被片段化理解”；11 月 7 日第二次说明改为“剪辑片段缺失上下文”。两次都未附原片链接，也未给时间码，措辞变化说明回应重点从“表达问题”转向“传播问题”。</div>
+        </details>
+        <details>
+          <summary>11 月 2 日账号动态改了什么？</summary>
+          <div class="ans">第二句由“谢谢大家的等待”改为“谢谢每一位到场的人”，修改时间 18:40。改动不涉及行程或合作信息，属于措辞调整，修改前后截图已归档在账号线条目。</div>
+        </details>
+        <details>
+          <summary>舞台直拍的分镜表怎么用？</summary>
+          <div class="ans">分镜表按秒标注机位切换，可用于对照正片删减位置。EP03-07 条目里，第二段舞蹈入场处的分镜连续 15 秒为单机位，正片在此处插入切换，是 9 秒差额的直接原因。</div>
+        </details>
+        <details>
+          <summary>条目里的 A/B/C 可信度分层是什么意思？</summary>
+          <div class="ans">A 层为可回放原片，B 层为有出处但经二次加工，C 层为无源转述。分层只反映核对成本，不反映立场。同一事件可以同时存在三层材料，判断时先看 A 层能确认什么。</div>
+        </details>
+      </section>
+
+      <!-- 8. 用户评论 -->
+      <section class="section" id="comments" aria-labelledby="comments-title">
+        <div class="section-head">
+          <h2 id="comments-title">用户评论：三种判断，都指向具体条目</h2>
+          <span class="more">摘录 6 条</span>
+        </div>
+        <div class="comments">
+          <div class="comment">
+            <div class="who"><span class="avatar">阿</span><b>阿May看舞台</b><time datetime="2026-11-07">11-07 22:10</time><span class="mood good">支持</span></div>
+            <p>EP03 直拍 00:41 那 9 秒走位确实是完整动作，正片切得太急。把两个版本并排看，节奏差异很明显，<span class="cite">EP03-07 条目</span>的分镜表对得上。</p>
+          </div>
+          <div class="comment">
+            <div class="who"><span class="avatar">临</span><b>凌晨三点剪片</b><time datetime="2026-11-07">11-07 18:32</time><span class="mood mid">中性</span></div>
+            <p>差额 23 秒里只有 9 秒和动作相关，剩下 14 秒是观众镜头和收尾。说“全是剪掉失误”站不住，但节目组一直不贴删减表也确实让人猜。</p>
+          </div>
+          <div class="comment">
+            <div class="who"><span class="avatar">白</span><b>白桃气泡</b><time datetime="2026-11-06">11-06 23:47</time><span class="mood bad">质疑</span></div>
+            <p>品牌直播那次，第二次说明还是没给时间码，只说“缺失上下文”。<span class="cite">10·28 事件</span>两次说明都停在措辞层面，读起来像公关稿，不像解释。</p>
+          </div>
+          <div class="comment">
+            <div class="who"><span class="avatar">老</span><b>老K不追星</b><time datetime="2026-11-06">11-06 15:20</time><span class="mood mid">中性</span></div>
+            <p>对行程没兴趣，但 11 月 4 日排练照第 4 张白板上的“11/6 舞台复审”确实能对上第三期上线时间，这条比一堆转述有用。</p>
+          </div>
+          <div class="comment">
+            <div class="who"><span class="avatar">舞</span><b>舞蹈房小周</b><time datetime="2026-11-05">11-05 20:05</time><span class="mood good">支持</span></div>
+            <p>直拍 02:58 到 03:09 的定点动作在正片被压缩成 5 秒，情绪断了一截。作为练舞的人，完整版更有参考价值，这点没什么好争的。</p>
+          </div>
+          <div class="comment">
+            <div class="who"><span class="avatar">路</span><b>路人甲观察</b><time datetime="2026-11-04">11-04 09:12</time><span class="mood bad">吐槽</span></div>
+            <p>最烦的是拿 8 秒切片当证据的账号，10·28 原片里明明有 30 秒补充说明。切片删掉那句之后，整件事的性质就变了。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. 相关资讯 -->
+      <section class="section" id="news" aria-labelledby="news-title">
+        <div class="section-head">
+          <h2 id="news-title">相关资讯：节目、品牌、账号三条线</h2>
+          <span class="more">按发布时间</span>
+        </div>
+        <div class="grid-cards">
+          <article class="card">
+            <div class="card-body">
+              <span class="kicker">节目线 · 11-06</span>
+              <h3><a href="/#latest">第三期正片 20:00 上线，直拍 12 分钟后发布</a></h3>
+              <p>官微直拍 4 分 05 秒，正片舞台段 3 分 42 秒。评论区前 200 条中 63 条询问版本差异。</p>
+              <div class="meta"><span class="tag">直拍时长</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <span class="kicker">品牌线 · 11-07</span>
+              <h3><a href="/#deep">品牌方第二次说明改口“缺失上下文”</a></h3>
+              <p>11:20 发布，全文比首次说明短 90 字，仍未附原片链接。两次说明相隔 8 天。</p>
+              <div class="meta"><span class="tag amber">回应</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <span class="kicker">账号线 · 11-02</span>
+              <h3><a href="/#faq">动态配文第二句修改，18:40 完成</a></h3>
+              <p>“谢谢大家的等待”改为“谢谢每一位到场的人”。修改前后截图已归档，条目编号 AC-11。</p>
+              <div class="meta"><span class="tag">原文留存</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 10. 相关推荐 + 标签索引 -->
+      <section class="section" id="tags" aria-labelledby="tags-title">
+        <div class="section-head">
+          <h2 id="tags-title">相关推荐：按具体搜索词找条目</h2>
+          <span class="more">32 个词</span>
+        </div>
+        <div class="tag-index">
+          <a href="/#deep">城市合伙人第三期直拍</a>
+          <a href="/#deep">舞台直拍时长对比</a>
+          <a href="/#news">10·28 品牌直播原片</a>
+          <a href="/#faq">直播切片上下文缺失</a>
+          <a href="/#guide">吃瓜信息核对步骤</a>
+          <a href="/#latest">节目正片剪辑点</a>
+          <a href="/#comments">EP03 观众镜头删减</a>
+          <a href="/#news">社交账号配文改动</a>
+          <a href="/#rank">条目可信度分层</a>
+          <a href="/#channels">徐婉公开行程索引</a>
+          <a href="/#faq">品牌方两次说明区别</a>
+          <a href="/#latest">11 月 4 日排练照</a>
+          <a href="/#deep">收尾定点 6 秒差额</a>
+          <a href="/#guide">原片时间码记录法</a>
+          <a href="/#tags">无源转述识别</a>
+          <a href="/#picks">本周五条精选</a>
+        </div>
+      </section>
+
+      <!-- 11. 补充板块：可信度榜单 -->
+      <section class="section" id="rank" aria-labelledby="rank-title">
+        <div class="section-head">
+          <h2 id="rank-title">条目可信度榜：本周五条按可核对度排序</h2>
+          <span class="more">评分以可复现性为准</span>
+        </div>
+        <ul class="rank-list">
+          <li><span class="rank-num">1</span><div><b>EP03 正片与直拍时长对照表</b><span>附三段差额与时间码，可逐项复现</span></div><span class="score">A 级</span></li>
+          <li><span class="rank-num">2</span><div><b>10·28 直播原片 21:14 上下文</b><span>有回放留存，前后 70 秒完整</span></div><span class="score">A 级</span></li>
+          <li><span class="rank-num">3</span><div><b>品牌方两次说明全文对比</b><span>有发布主体与时间，属回应层</span></div><span class="score">B+ 级</span></li>
+          <li><span class="rank-num">4</span><div><b>11 月 2 日配文修改记录</b><span>有前后截图，改动幅度小</span></div><span class="score">B 级</span></li>
+          <li><span class="rank-num">5</span><div><b>“现场情绪失控”类文字帖</b><span>无画面、无时间码、无原始发布者</span></div><span class="score">C 级</span></li>
+        </ul>
+        <div class="quote-card" style="margin-top:22px;">
+          <p>“核对成本最低的材料，往往不是传播最广的那一条。”</p>
+          <cite>—— 条目核对准则第 3 条，2026 年 10 月修订</cite>
+        </div>
+      </section>
+
+    </div><!-- /content -->
+
+    <!-- sidebar -->
+    <aside class="sidebar" aria-label="侧栏导航与推荐">
+      <nav class="side-card side-nav" aria-label="页内栏目导航">
+        <h3>栏目速览</h3>
+        <ul>
+          <li><a href="/#overview">领域概览</a></li>
+          <li><a href="/#picks">精选内容推荐</a></li>
+          <li><a href="/#latest">最新更新</a></li>
+          <li><a href="/#channels">分类入口</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#comments">用户评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#tags">相关推荐</a></li>
+          <li><a href="/#rank">可信度榜</a></li>
+        </ul>
+      </nav>
+      <div class="side-card">
+        <h3>本周高频条目</h3>
+        <ul class="pick-list">
+          <li><a href="/#deep">EP03 直拍 23 秒差额</a><time datetime="2026-11-07">更新于 11-07</time></li>
+          <li><a href="/#news">10·28 直播原片上下文</a><time datetime="2026-11-07">更新于 11-07</time></li>
+          <li><a href="/#faq">品牌方两次说明对比</a><time datetime="2026-11-07">更新于 11-07</time></li>
+          <li><a href="/#guide">四步核对法</a><time datetime="2026-11-04">更新于 11-04</time></li>
+        </ul>
+      </div>
+      <div class="side-note">
+        条目均标注来源类型与日期。涉及争议的内容区分事实、回应、转述与推测，未标注来源的说法不计入榜单。
+      </div>
+    </aside>
+
+  </div><!-- /layout -->
+</main>
+
+<footer class="site-footer" id="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#f2c14e"/>
+            <circle cx="32" cy="30" r="14" fill="#225c4e"/>
+            <text x="32" y="52" font-size="16" text-anchor="middle" fill="#173f36" font-family="sans-serif">瓜</text>
+          </svg>
+          <b>徐婉吃瓜网</b>
+        </div>
+        <p class="footer-pos">把公开物料、官方说明与账号原文按时间码归档，给每个争议点留出可反驳的位置。</p>
+        <p style="font-size:12.5px;color:#93b1a7;">条目素材为公开信息整理与示例条目，人物行程与节目数据以官方发布为准。</p>
+      </div>
+      <div>
+        <h3>节目与舞台</h3>
+        <a href="/#latest">第三期正片剪辑点</a>
+        <a href="/#deep">直拍时长对照</a>
+        <a href="/#picks">舞台分镜表</a>
+        <a href="/#comments">观众反应镜头讨论</a>
+      </div>
+      <div>
+        <h3>商务与账号</h3>
+        <a href="/#news">品牌直播原片</a>
+        <a href="/#faq">官方回应归档</a>
+        <a href="/#guide">账号原文核对</a>
+        <a href="/#tags">搜索词索引</a>
+      </div>
+      <div>
+        <h3>核对工具</h3>
+        <a href="/#guide">四步核对法</a>
+        <a href="/#rank">可信度分层榜</a>
+        <a href="/#channels">频道入口</a>
+        <a href="/#footer">更新时间说明</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 徐婉吃瓜网 · 内容为公开信息整理，示例条目已标注</span>
+      <span class="update">页面更新：2026-11-08 · 对应新增 EP03-07 分镜表与 11-07 品牌方二次说明</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到顶部">↑</button>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "徐婉吃瓜网",
+  "description": "聚焦徐婉相关娱乐事件的公开信息整理与时间线归档，区分事实、回应、转述与推测。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "《城市合伙人》第三期正片和直拍为什么差 23 秒？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "差额由入场走位 9 秒、观众反应镜头 8 秒、收尾定点 6 秒组成。正片 00:41 直接切入主歌，直拍保留完整走位；正片 03:37 提前切黑。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "10 月 28 日品牌直播的原话到底说了什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "直播回放 21:14 处为“这个安排我事先不知道”，随后 30 秒补充“临时改的，我也在适应”。8 秒切片只保留前半句。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "品牌方两次说明的区别在哪？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "10 月 30 日首次说明用“表述被片段化理解”，11 月 7 日第二次说明改为“剪辑片段缺失上下文”，两次均未附原片链接与时间码。"
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+(function(){
+  var toggle = document.getElementById('menuToggle');
+  var nav = document.getElementById('main-nav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.textContent = open ? '收起菜单' : '导航菜单';
+    });
+    nav.addEventListener('click', function(e){
+      if (e.target.tagName === 'A' && window.innerWidth <= 980) {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.textContent = '导航菜单';
+      }
+    });
+  }
+
+  var form = document.getElementById('searchForm');
+  var input = document.getElementById('searchInput');
+  var feedback = document.getElementById('searchFeedback');
+
+  function findTargets(q){
+    q = q.trim().toLowerCase();
+    var nodes = document.querySelectorAll('main h2, main h3, main summary, main .tag-index a, main .li-body b');
+    var results = [];
+    nodes.forEach(function(n){
+      if (n.textContent.toLowerCase().indexOf(q) !== -1) results.push(n);
+    });
+    return results;
+  }
+
+  if (form && input) {
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var q = input.value.trim();
+      if (!q) { feedback.textContent = '请输入要查找的条目关键词，例如：直拍、切片、品牌说明。'; feedback.classList.add('on'); return; }
+      var hits = findTargets(q);
+      if (hits.length === 0) {
+        feedback.textContent = '没有找到与“' + q + '”匹配的条目，可试试“直拍”“直播原片”“品牌说明”。';
+        feedback.classList.add('on');
+        return;
+      }
+      feedback.textContent = '找到 ' + hits.length + ' 处匹配，已跳转到第一条。';
+      feedback.classList.add('on');
+      var target = hits[0].closest('.section') || hits[0];
+      if (target.id) { location.hash = '/#' + target.id; }
+      target.scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  }
+
+  var toTop = document.getElementById('toTop');
+  function onScroll(){
+    if (window.scrollY > 520) { toTop.classList.add('show'); }
+    else { toTop.classList.remove('show'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  if (toTop) {
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  // sidebar active highlight
+  var links = document.querySelectorAll('.side-nav a');
+  var map = {};
+  links.forEach(function(a){
+    var id = a.getAttribute('href').split('#')[1];
+    if (id) map[id] = a;
+  });
+  if ('IntersectionObserver' in window && Object.keys(map).length) {
+    var targets = [];
+    Object.keys(map).forEach(function(id){
+      var el = document.getElementById(id);
+      if (el) targets.push(el);
+    });
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        var link = map[en.target.id];
+        if (!link) return;
+        if (en.isIntersecting) {
+          links.forEach(function(a){ a.classList.remove('active'); });
+          link.classList.add('active');
+        }
+      });
+    }, {rootMargin:'-45% 0px -50% 0px', threshold:0});
+    targets.forEach(function(t){ obs.observe(t); });
+  }
+
+  // sticky height -> css var
+  function setStickyH(){
+    var stack = document.querySelector('.sticky-stack');
+    if (stack) {
+      document.documentElement.style.setProperty('--sticky-h', stack.offsetHeight + 'px');
+    }
+  }
+  setStickyH();
+  window.addEventListener('resize', setStickyH);
+})();
+</script>
+</body>
+  </html>
